@@ -24,7 +24,7 @@
       .container.links
         .brand
           = link_to root_url do
-            = image_tag asset_pack_path('logo_full.svg'), alt: 'Mastodon'
+            = image_tag asset_pack_path('logo_full.svg'), alt: 'Eloli'
 
         %ul.nav
           %li
@@ -33,7 +33,6 @@
             - else
               = link_to t('auth.login'), new_user_session_path, class: 'webapp-btn'
           %li= link_to t('about.about_this'), about_more_path
-          %li= link_to t('about.other_instances'), 'https://joinmastodon.org/'
 
       .container.hero
         .floats
